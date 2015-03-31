@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Description" content="" />
+<meta name="Keywords" content="HTML,JAVASCRIPT" />
+<meta http-equiv="Content-Type" content="text/html" />
+<meta http-equiv="charset" content="UTF-8" />
+<meta name="Distribution" content="Global" />
+<meta name="Author" content="JasonDepp" />
+<meta name="Robots" content="index,follow" />
+<!-- Robots content to allow search engine reach to your page and reach to others by links on your page 
+	content should be like INDEX,FOLLOW,NOINDEX,NOFOLLOW-->
+<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<title>JST</title>
+<script type="text/javascript" src="../../js/jsqa/jsqa.js">
+	
+</script>
+<script type="text/javascript" src="../../js/jsqa/jsqaUtil.js">
+	
+</script>
+</head>
+<body>
+	<div style="width: 728px; height: 90px; margin: 0 auto;"></div>
+	<div id="content">
+		<div class="header">
+			<h1>
+				<a href="#">Content Root</a>
+			</h1>
+		</div>
+
+		<div class="subheader">
+			<div class="subheader_right" id="qtabs">
+				<a id="showAllWithoutAnswers" href="#" onclick="showAllWithoutAnswers();">SHOW ALL ?</a>
+				<a href="#" onclick="showAllWithAnswers();">SHOW ALL A</a>
+			</div>
+			<div class="subheader_left">
+				<a href="#">Catalog</a>
+			</div>
+		</div>
+
+		<div class="left">
+			<script src="../../js/writeCatalog.js"></script>
+		</div>
+
+		<script type="text/javascript">
+			//createQuestion(index,title,content,result,hasPrevious,hasNext);
+			createQuestion(1, "Q1", "Content1", "result1", false, true);
+			createQuestion(2, "Q2", "Content2", "result2", true, true);
+			createQuestion(3, "Q3", "Content3", "result3", true, true);
+			createQuestion(4, "Q4", "Content4", "result4", true, true);
+			createQuestion(5, "Q5", "Content5", "result5", true, false);
+			showQuestion(1);
+		</script>
+
+
+		<div class="footer"></div>
+	</div>
+</body>
+</html>
